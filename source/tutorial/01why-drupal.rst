@@ -1,5 +1,5 @@
 Why Drupal?
------------
+===========
 
 .. _why-drupal:
 
@@ -67,4 +67,4 @@ trade data from the NYSE, for example. You'll want a leaner and more purpose
 built system for that, but chances are if you're bilding something like that
 you already know this.
 
-Now, :ref:`which_version`_!
+Now, on to :doc:`02installation`!

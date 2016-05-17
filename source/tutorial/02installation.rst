@@ -3,8 +3,7 @@ Installing Drupal
 
 .. _installation:
 
-See `the previous post in this series<why-drupal>`_ on getting
-started with Drupal.
+See :doc:`01why-drupal` on getting started with Drupal.
 
 ---
 
@@ -12,7 +11,7 @@ So welcome back, this is actually the most challenging part of this tutorial -
 installing Drupal. I'm assuming no prior web development experience, so the
 first part will be installing something to run your tutorial Drupal site on.
 
-For this we'll be using a project called `MAMP`_.
+For this we'll be using a project called `MAMP <https://www.mamp.info/en/>`_.
 MAMP is a package of software that makes it easy to set up Drupal (but not just
 Drupal) on your computer. I'll skip the deeper details for now, but head over
 to MAMP and download it. You can stick with the free version for now.
@@ -20,8 +19,6 @@ to MAMP and download it. You can stick with the free version for now.
 note: There are many basically equivalent packages out there for this purpose -
 XAMPP, Acquia Dev Desktop. If you'd prefer one of those feel free, but I'll be
 using MAMP because it's very simple and is what I got started with.
-
-.. MAMP: https://www.mamp.info/en/
 
 MAMP
 ----
@@ -56,8 +53,7 @@ installer, and when you get done you should be able to open MAMP in the same
 way that you'd open any other application. Once it starts up, you should have a
 screen that looks basically like this --
 
-![Mamp opening
-screen](https://www.mamp.info/en/images/screenshots/en_mamp-start.jpg)
+.. image:: https://www.mamp.info/en/images/screenshots/en_mamp-start.jpg
 
 Once you click "Start Servers" you've done it! You've built your first
 webserver stack!
@@ -68,8 +64,10 @@ looking for the rightmost tab, it's either called "Apache" or "Webserver" in
 the most recent versions. Under that tab will be a most pertinent piece of
 information - the "Document Root".
 
-> *Document Root - where the webserver will look for the files that it's trying
-to serve.*
+.. note::
+
+    *Document Root - where the webserver will look for the files that it's trying
+    to serve.*
 
 In a nutshell, once we download Drupal, we're going to put all it's files in
 that directory so make a note of where that directory is!
@@ -77,7 +75,7 @@ that directory so make a note of where that directory is!
 Downloading Drupal
 ------------------
 
-Head on over to [Drupal.org](https://www.drupal.org/download) and download
+Head on over to `Drupal.org <https://www.drupal.org/download>`_ and download
 Drupal! At the time of this writing, that giant green button takes you to
 another screen where you are presented with ah choice. I was hoping to shield
 my readers from this, but if you're going to learn Drupal I guess now's as good
@@ -85,13 +83,12 @@ a time as any to explain why this choice exists at all.
 
 You may skip all of this.
 
----
-
+------------
 An interlude
 ------------
 
-Drupal has been around for nigh 12 years at this point. It was started in [a
-Dutch kid's](http://buytaert.net/) dorm room as more or less a message board
+Drupal has been around for nigh 12 years at this point. It was started in `a
+Dutch kid's <http://buytaert.net/>`_ dorm room as more or less a message board
 for that dorm. Early in life it embraced the open source model for development,
 which means that other kids in his dorm were able to hack on it and add to it
 and improve on it and make it better for everybody.
@@ -112,7 +109,7 @@ web necessitated engaging with the wider PHP ecosystem. After all, the Easter
 Islands were once thriving communities, yet after time they thrived themselves
 right out of existence. Drupal wanted to avoid such a fate, so a decision was
 made in 2011 to replace some key pieces of Drupal's internal code with more
-modern code from a well known PHP framework - [Symfony](https://symfony.com/).
+modern code from a well known PHP framework - `Symfony <https://symfony.com/>`_.
 
 This made a heck of a lot of sense. Much of Drupal's aforementioned dorm code
 had very interesting, almost paleological qualities about the way that it
@@ -183,14 +180,14 @@ in your MAMP preferences under Apache/Webserver/whatever. It'll end in
 `htdocs`, so something like `/Applications/MAMP/htdocs` if you're on a Mac, or
 whatever that screen says if you're not.
 
-### The big payoff
+The big payoff
+--------------
 
 Something always goes funny with people's computers, but at this point you
 should be able to navigate your browser to localhost:8888 and be greeted with
 the Drupal installation screen.
 
-![Drupal 8 install
-screen](https://www.acquia.com/sites/default/files/installd8.png)
+.. image:: https://www.acquia.com/sites/default/files/installd8.png
 
 We're going to be choosing all the defaults for this tutorial, click through
 the language and the next option is for "installation profile", just choose
@@ -203,10 +200,13 @@ should have all this sorted out for you already, though so soldier on.
 The next and basically final step is to give Drupal the connection credentials
 to your MySQL database. Those can be found on the welcome webpage if you click
 that middle button in MAMP. That'll take you to a screen that tells you for
-sure, but it should be something like
+sure, but it should be something like::
 
-~~~ user: root pass: root host: localhost (open up the advanced options) port:
-8889 (leave the table prefix empty) ~~~
+    user: root 
+    pass: root 
+    host: localhost (open up the advanced options) 
+    port: 8889 (leave the table prefix empty) 
+
 
 At this point, you're in. You've installed Drupal. There is one more
 configuration screen that you can plug all the answers into on your own.

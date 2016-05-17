@@ -6,9 +6,9 @@ If you're brand new to Drupal, let's get you set up to build something!
 .. toctree::
   :maxdepth: 2
   
-  tutorial/why-drupal
-  tutorial/installation
-  tutorial/content_types
+  tutorial/01why-drupal
+  tutorial/02installation
+  tutorial/03content_types
   tutorial/views
   tutorial/users_roles
   tutorial/themes
